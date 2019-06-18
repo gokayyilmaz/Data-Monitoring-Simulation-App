@@ -1,5 +1,4 @@
-# data-monitoring-app-simulation
-Dynamic Data Monitoring Simulation Application
+# Data-Monitoring-Simulation-App
 
 # INTRODUCTION
 The aim of this project is to develop a dynamic data monitoring application. 
