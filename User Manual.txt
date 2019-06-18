@@ -1,0 +1,26 @@
+***************************************************
+
+	Welcome to the Data Monitoring App
+
+***************************************************
+
+
+
+1 - Select channels.
+
+2 - Click START button.
+
+3 - You can examine the table and the graph now.
+
+4 - Click STOP button.
+
+5 - You can examine the log file now with clicking 
+    OPEN LOG FILE button.
+
+
+
+***************************************************
+
+		 Gökay Yýlmaz
+
+***************************************************

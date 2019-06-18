@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>667</width>
+    <height>446</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #393e46; color: #eeeeee</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="header">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #00adb5; font-weight: bold; font-size: 21px</string>
+       </property>
+       <property name="text">
+        <string>VOLTAGE MODULE - DYNAMIC DATA MONITORING APP</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QSplitter" name="splitter">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <widget class="QWidget" name="">
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="cb1">
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #eeeeee</string>
+             </property>
+             <property name="text">
+              <string>Channel 1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="cb5">
+             <property name="styleSheet">
+              <string notr="true">color: #eeeeee</string>
+             </property>
+             <property name="text">
+              <string>Channel 5</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="cb2">
+             <property name="styleSheet">
+              <string notr="true">color: #eeeeee</string>
+             </property>
+             <property name="text">
+              <string>Channel 2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="cb6">
+             <property name="styleSheet">
+              <string notr="true">color: #eeeeee</string>
+             </property>
+             <property name="text">
+              <string>Channel 6</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="cb3">
+             <property name="styleSheet">
+              <string notr="true">color: #eeeeee</string>
+             </property>
+             <property name="text">
+              <string>Channel 3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QCheckBox" name="cb7">
+             <property name="styleSheet">
+              <string notr="true">color: #eeeeee</string>
+             </property>
+             <property name="text">
+              <string>Channel 7</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QCheckBox" name="cb4">
+             <property name="styleSheet">
+              <string notr="true">color: #eeeeee</string>
+             </property>
+             <property name="text">
+              <string>Channel 4</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QCheckBox" name="cb8">
+             <property name="styleSheet">
+              <string notr="true">color: #eeeeee</string>
+             </property>
+             <property name="text">
+              <string>Channel 8</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetFixedSize</enum>
+           </property>
+           <item>
+            <widget class="QPushButton" name="start_button">
+             <property name="styleSheet">
+              <string notr="true">color: #eeeeee; background-color: #00cc00; font-weight: bold; font-size: 26px; height: 50px; width: 180px</string>
+             </property>
+             <property name="text">
+              <string>START</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="stop_button">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #eeeeee; background-color: #cc0000; font-weight: bold; font-size: 26px; height: 50px; width: 180px</string>
+             </property>
+             <property name="text">
+              <string>STOP</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item>
+          <widget class="QTableWidget" name="tableWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #eeeeee; color: #393e46;</string>
+           </property>
+           <attribute name="horizontalHeaderCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderHighlightSections">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderHighlightSections">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderStretchLastSection">
+            <bool>false</bool>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Channel</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Data</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>1</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>----- V</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>2</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>----- V</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>3</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>----- V</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>4</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>----- V</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>5</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string>----- V</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>6</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="5" column="1">
+            <property name="text">
+             <string>----- V</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string>7</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="6" column="1">
+            <property name="text">
+             <string>----- V</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="7" column="0">
+            <property name="text">
+             <string>8</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="7" column="1">
+            <property name="text">
+             <string>----- V</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QPushButton" name="see_button">
+             <property name="styleSheet">
+              <string notr="true">color: #00adb5; background-color: #222831; font-weight: bold; font-size: 20px; height: 50px; width: 180px</string>
+             </property>
+             <property name="text">
+              <string>OPEN LOG FILE</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="manual_button">
+             <property name="styleSheet">
+              <string notr="true">color: #00adb5; background-color: #222831; font-weight: bold; font-size: 20px; height: 50px; width: 180px</string>
+             </property>
+             <property name="text">
+              <string>OPEN USER MANUAL</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
